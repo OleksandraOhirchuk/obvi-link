@@ -1,15 +1,43 @@
 @media screen and (min-width: 320px) {
   .footer {
     position: absolute;
+    left: 0;
+    bottom: 0;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
-    gap: 50px;
-    padding-top: 60px;
-    padding-bottom: 60px;
-    background-color: #2D5E5E;
+    padding-top: 40px;
+    padding-bottom: 75px;
+    background-color: #EAF5F9;
+    text-align: center;
+    gap: 35px;
   }
-  .logo {
+  .footer-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
 
+
+    &__link {
+      text-decoration: none;
+      color: #131313;
+
+    }
+
+    .footer-logo {
+width: 100%;
+    }
+  }
+}
+
+@media screen and (min-width: 750px) {
+  .footer {
+
+  }
+  .footer-list {
+    flex-direction: row;
   }
 }
